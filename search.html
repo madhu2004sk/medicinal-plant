@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="css/search.css">
+  </head>
+  
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+    
+    <h1>Search Results</h1>
+    <div id="searchResults" class="plant-row">
+    </div>
+    <p id="noResults" style="display:none; text-align:center; font-weight:bold; font-size:1.2rem;">No results found 🌿</p>
+    
+    <div id="plantModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modalImage" src="" alt="Plant Image">
+        <h2 id="modalName"></h2>
+        <p><strong>Use:</strong><span id="modalUse"></span></p>
+        <p><strong>How to use:</strong><span id="modalHow"></span></p>
+      </div>
+    </div>
+    <script src="js/search.js"></script>
+  </body>
+</html>

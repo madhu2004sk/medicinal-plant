@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Plant Scanner</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #e8f5e9;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h2{
+            color: #2e7d32;
+        }
+        
+        .camera-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+        }
+        
+        video {
+            width: 100%;
+            border-radius: 12px;
+        }
+        
+        #switchBtn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        canvas {
+            width: 100%;
+            max-width: 320px;
+            border: 2px solid#2e7d32;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        button{
+            margin: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #1b5e20;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h2 style="text-align: center;">🌿 AI Medicinal Plant Scanner</h2>
+    
+    <div class="camera-container">
+        <video id="video" autoplay playsinline></video>
+        <!-- Switch Camera Button -->
+        <button id="switchBtn" onclick="switchCamera()">🔄</button>
+    </div>
+
+    <canvas id="canvas" hidden></canvas>
+    <div style="text-align: center;">
+        <button onclick="captureImage()" id="captureBtn"> Capture</button>
+        <br>
+        <button onclick="scanImage()" id="scanBtn">Scan plant</button>
+    </div>
+
+
+    <div id="result" style="text-align: center; margin-top:18px;"></div>
+
+    <script src="../scanner/scanner.js"></script>
+</body>
+</html>

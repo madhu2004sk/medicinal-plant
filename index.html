@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Medicinal Plant</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   </head>
+
+   <body>
+      <!-- Navbar -->
+      <nav class="navbar">
+         <div class="logo">🌿 AI Powered Medicinal Plant Recognition</div>
+         <div class="dropdown">
+            <button class="dropdown-btn">Menu <i class="fa fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+               <a href="about.html"><i class="fa fa-info-circle"></i> About</a>
+               <a href="signin.html" id="loginBtn"><i class="fa fa-sign-in-alt"></i> Login </a>
+               <button id="logoutBtn"><i class="fa fa-sign-out-alt"></i> Logout</button>
+            </div>
+         </div>
+      </nav>
+
+
+      <header class="hero" style="background-image: url(images/home.jpg);">
+         <div class="hero-content"> 
+            <h1>Welcome to Medicinal Plants</h1>
+            <p>Explore the world of medicinal plant and their uses</p>
+            <a href="scanner/scanner.html"><button id="aiScanner" class="ai-btn">Try AI Plant Scanner</button></a>
+         </div>
+      </header> 
+      
+      <!-- Search Section -->
+      <section class="search-section">
+         <h2>Medicinal Plants</h2>
+         <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search by plant name or use...">
+            <button id="homeSearchBtn"><i class="fa fa-search"></i></button>
+            <button id="voiceBtn" title="Voice Search"><i class="fa fa-microphone"></i></button>
+            <p id="voiceText"></p>
+         </div>
+      </section>
+      
+      <!-- Plant Section Section --> 
+       <section id="plantGallery1" class="gallery">
+         <div class="carousel-container">
+            <button class="scroll-btn left">&#10094;</button>
+            <div  class="plant-row">
+               <div class="plant-card">
+                  <img src="images/aloe vera.jpg" alt="Aloe Vera">
+                  <h3>Aloe Vera</h3>
+                  <p><strong>Use:</strong>Treats skin burns</p>
+                  <p><strong>How to use:</strong>Apply gel directly on affected area.</p>
+               </div>
+               
+               <div class="plant-card">
+                  <img src="images/ashwagandha.jpg" alt="Ashwagandha">
+                  <h3>Ashwagandha</h3>
+                  <p><strong>Use:</strong>Reduce stress and increases stamina.</p>
+                  <p><strong>How to use:</strong>Take powder with warm milk daily.</p>
+               </div>
+               
+               <div class="plant-card">
+                  <img src="images/amla.jpg" alt="Amla">
+                  <h3>Amla</h3>
+                  <p><strong>Use:</strong>Boosts immunity and improves hair health.</p>
+                  <p><strong>How to use:</strong>Eat fruit or drink fresh juice.</p>
+               </div>
+               
+               <div class="plant-card">
+                  <img src="images/bael.jpg" alt="Bael">
+                  <h3>Bael</h3>
+                  <p><strong>Use:</strong>improves digestion and relives constipation. </p>
+                  <p><strong>How to use:</strong>Eat ripe pulp or drink Bael juice.</p>
+               </div>
+               
+               <div class="plant-card">
+                  <img src="images/bhringraj.jpg" alt="Bhringraj">
+                  <h3>Bhringraj</h3>
+                  <p><strong>Use:</strong>Promotes hair growth and reduce dandruff.</p>
+                  <p><strong>How to use:</strong>Use oil on scalp or take powder with water.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/bitter gourd.jpg" alt="Bitter">
+                  <h3>Bitter gourd</h3>
+                  <p><strong>Use:</strong>Controls diabetes and purifies blood.</p>
+                  <p><strong>How to use:</strong>Drink as juice or cook as vegetable.</p>
+               </div>
+            </div> 
+            <button class="scroll-btn right">&#10095;</button>
+         </div>
+      </section> 
+
+      <section id="plantGallery2" class="gallery">
+         <div class="carousel-container">
+            <button class="scroll-btn left">&#10094;</button>
+            <div  class="plant-row">
+               <div class="plant-card">
+                  <img src="images/brahmi.jpg" alt="Brahmi">
+                  <h3>Brahmi</h3>
+                  <p><strong>Use:</strong>Improves memory and reduce anxiety.</p>
+                  <p><strong>How to use:</strong>Take powder with warm water daily.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/chamomile.jpg" alt="chamomile">
+                  <h3>Chamomile</h3>
+                  <p><strong>Use:</strong>Promotes sleep and relives stomach pain.</p>
+                  <p><strong>How to use:</strong>Drink herbal tea made from flowers.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/clove plant.jpg" alt="Clove">
+                  <h3>Clove</h3>
+                  <p><strong>Use:</strong>Relives toothache and kills bacteria.</p>
+                  <p><strong>How to use:</strong>Chew 1-2 cloves or apply clove oil.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/coriander.jpg" alt="coriander">
+                  <h3>Coriander</h3>
+                  <p><strong>Use:</strong>Improves digestion and detoxifies body.</p>
+                  <p><strong>How to use:</strong>Drink seed water or use fresh leaves</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/curry leaves.jpg" alt="curry leaves">
+                  <h3>Curry leaves</h3>
+                  <p><strong>Use:</strong>Promotes hair growth and supports liver health.</p>
+                  <p><strong>How to use:</strong>Eat raw or add to daily food.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/cinnamom.jpg" alt="cinnamon">
+                  <h3>Cinnamon</h3>
+                  <p><strong>Use:</strong>Controls blood sugar and aids digestion.</p>
+                  <p><strong>How to use:</strong>Add powder to tea or warm water.</p>
+               </div>
+            </div> 
+            <button class="scroll-btn right">&#10095;</button>
+         </div>
+      </section> 
+      
+      <section id="plantGallery3" class="gallery">
+         <div class="carousel-container">
+            <button class="scroll-btn left">&#10094;</button>
+            <div  class="plant-row">
+               <div class="plant-card">
+                  <img src="images/eucalyptus.jpg" alt="Eucalyptus">
+                  <h3>Eucalyptus</h3>
+                  <p><strong>Use:</strong> Relieves cough and clears nasal blockage.</p>
+                  <p><strong>How to use:</strong> Inhale steam with eucalyptus oil.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/fenugreek.jpg" alt="Fenugreek">
+                  <h3>Fenugreek</h3>
+                  <p><strong>Use:</strong> Lowers sugar and promotes hair growth.</p>
+                  <p><strong>How to use:</strong> Soak seeds overnight and eat.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/Garlic.jpg" alt="Garlic">
+                  <h3>Garlic</h3>
+                  <p><strong>Use:</strong> Lowers cholesterol and boosts immunity.</p>
+                  <p><strong>How to use:</strong> Eat 1–2 raw cloves daily.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/Giloy.jpg" alt="Giloy">
+                  <h3>Giloy</h3>
+                  <p><strong>Use:</strong> Boosts immunity and reduces fever.</p>
+                  <p><strong>How to use:</strong> Drink stem juice or decoction daily.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/ginger.jpg" alt="Ginger">
+                  <h3>Ginger</h3>
+                  <p><strong>Use:</strong> Relieves cold, cough, and nausea.</p>
+                  <p><strong>How to use:</strong> Drink ginger tea or chew raw slices.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/gotu kola.jpg" alt="Gotu Kola">
+                  <h3>Gotu Kola</h3>
+                  <p><strong>Use:</strong> Improves memory and skin health.</p>
+                  <p><strong>How to use:</strong> Take powder or capsule with water.</p>
+               </div>
+            </div> 
+            <button class="scroll-btn right">&#10095;</button>
+         </div>
+      </section> 
+
+      <section id="plantGallery4" class="gallery">
+         <div class="carousel-container">
+            <button class="scroll-btn left">&#10094;</button>
+            <div  class="plant-row">
+               <div class="plant-card">
+                  <img src="images/hibiscus.jpg" alt="Hibiscus">
+                  <h3>Hibiscus</h3>
+                  <p><strong>Use:</strong> Promotes hair growth and controls blood pressure.</p>
+                  <p><strong>How to use:</strong> Apply flower paste or drink tea.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/Kalmegh.jpg" alt="Kalmegh">
+                  <h3>Kalmegh</h3>
+                  <p><strong>Use:</strong> Improves liver function and reduces fever.</p>
+                  <p><strong>How to use:</strong> Take powder with water or capsule.</p>
+               </div>
+
+               <div class="plant-card">
+                  <img src="images/lavender.jpg" alt="Lavender">
+                  <h3>Lavender</h3>
+                  <p><strong>Use:</strong> Relieves stress and promotes good sleep.</p>
+                  <p><strong>How to use:</strong> Use oil for aroma or in bath.</p>
+               </div>
+               <div class="plant-card">
+                  <img src="images/lemongrass.jpg" alt="Lemongrass">
+                  <h3>Lemongrass</h3>
+                  <p><strong>Use:</strong> Improves digestion and reduces stress.</p>
+                  <p><strong>How to use:</strong> Drink tea made from fresh leaves.</p>
+               </div>
+               
+               <div class="plant-card">
+                  <img src="images/mint.jpg" alt="Mint">
+                  <h3>Mint</h3>
+                  <p><strong>Use:</strong> Cools body and aids digestion.</p>
+                  <p><strong>How to use:</strong> Add leaves to tea or juice.</p>
+               </div>
+               
+               <div class="plant-card">
+                  <img src="images/neem.jpg" alt="Neem">
+                  <h3>Neem</h3>
+                  <p><strong>Use:</strong> Purifies blood and treats acne.</p>
+                  <p><strong>How to use:</strong> Apply paste or chew tender leaves.</p>
+               </div>
+            </div> 
+            <button class="scroll-btn right">&#10095;</button>
+         </div>
+      </section> 
+
+      <section id="plantGallery5" class="gallery">
+         <div class="carousel-container">
+            <button class="scroll-btn left">&#10094;</button>
+            <div  class="plant-row">
+               <div class="plant-card">
+                  <img src="images/peppermint.jpg" alt="Peppermint">
+                  <h3>Peppermint</h3>
+                  <p><strong>Use:</strong> Relieves headache and aids digestion.</p>
+                  <p><strong>How to use:</strong> Drink peppermint tea or inhale vapor.</p>
+               </div>
+               <div class="plant-card">
+                  <img src="images/rose.jpg" alt="Rose">
+                  <h3>Rose</h3>
+                  <p><strong>Use:</strong> Improves skin tone and uplifts mood.</p>
+                  <p><strong>How to use:</strong> Use rose water or fresh petals.</p>
+               </div>
+               
+               <div class="plant-card">
+                  <img src="images/sandalwood.jpg" alt="Sandalwood">
+                  <h3>Sandalwood</h3>
+                  <p><strong>Use:</strong> Cools skin and reduces acne marks.</p>
+                  <p><strong>How to use:</strong> Apply paste or use sandal oil.</p>
+               </div>
+               
+               <div class="plant-card">
+                  <img src="images/shankhpushpi.jpg" alt="Shankhpushpi">
+                  <h3>Shankhpushpi</h3>
+                  <p><strong>Use:</strong> Improves memory and reduces stress.</p>
+                  <p><strong>How to use:</strong> Take syrup or powder with milk.</p>
+               </div>
+               
+               <div class="plant-card">
+                  <img src="images/Tulsi.jpg" alt="Tulsi">
+                  <h3>Tulsi (Holy Basil)</h3>
+                  <p><strong>Use:</strong> Relieves cough and boosts immunity.</p>
+                  <p><strong>How to use:</strong> Chew leaves or drink Tulsi tea.</p>
+               </div>
+               <div class="plant-card">
+                  <img src="images/turmeric.jpg" alt="Turmeric">
+                  <h3>Turmeric</h3>
+                  <p><strong>Use:</strong> Reduces inflammation and boosts immunity.</p>
+                  <p><strong>How to use:</strong> Mix in warm milk or apply paste.</p>
+               </div>
+            </div> 
+            <button class="scroll-btn right">&#10095;</button>
+         </div>
+      </section> 
+
+      <div id="plantModal" class="modal">
+         <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modalImage" src="" alt="Plant Image">
+            <h2 id="modalName"></h2>
+            <p><strong>Use:</strong><span id="modalUse"></span></p>
+            <p><strong>How to use:</strong><span id="modalHow"></span></p>
+         </div>
+      </div>
+
+      <footer class="site-footer">
+         <div class="footer-content">
+            <p>&copy; 2025 Medicinal Plant Hub 🌿| Designed by Our Team  </p>
+            <p>
+               Contact: <a href="mailto:info@medicinalhub.com">www.plantrecognition.com</a>
+            </p>
+            <p>
+               Follows us:
+               <a href="#" class="socials-link"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#" class="socials-link"><i class="fa-brands fa-instagram"></i></a>
+               <a href="#" class="socials-link"><i class="fa-brands fa-twitter"></i></a>
+            </p>
+         </div>
+      </footer>
+      <script src="js/script.js"></script>
+   </body>
+
+</html>

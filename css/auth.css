@@ -1,0 +1,99 @@
+body {
+    background: #e8f5e9;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+
+    /* background image now comes from HTML */
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+  
+}
+
+/* Dark overlay */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/* Auth box */
+.auth-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 340px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.auth-box h2 {
+    color: #2e7d32;
+}
+
+.auth-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.auth-box button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.auth-box button:hover {
+    background: #256628;
+}
+
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+        align-items: center;
+        min-height: 100svh;
+        width: 96%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background-image: url(../images/peppermint.jpg);
+        background-size: cover;
+    }
+
+    .auth-box {
+        width: 100%;
+        border-radius: 20px;
+        padding: 15px 20px;
+    }
+
+    .auth-box h2 {
+        font-size: 20px;
+    }
+
+    .auth-box input, .auth-box button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+}
+
+
